@@ -21,10 +21,18 @@
 	}
 }
 
+html {
+	height: 100%;
+	background-color: #434c50;
+	background-image: linear-gradient(45deg, #C9C9C9, #949494);
+	background-size: 100%;
+	background-attachment: fixed;
+}
 
 body {
 	font-family: 'Signika Negative', sans-serif;
-	background-color: #434c50;
+
+
 	color: #fff;
 
 }
@@ -33,7 +41,7 @@ a {
 	color: white;
 }
 a:hover {
-	color: #7ee5f4;
+	color: #001C8A; /*random ass color*/
 }
 
 
@@ -76,11 +84,12 @@ header {
 	background-image: url('Logotype3extrasmall.png');
 }
 
-.emailCollector {
-	width: 400px;
+
+.emailCollector iframe {
+	position: absolute;
+	top: 220px; left: 0; right: 0; bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 210px;
 }
 
 
@@ -113,26 +122,26 @@ nav {
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 70px;
 
-	border-top: 2px solid white;
-
-	width: 250px;
+	border-bottom: 2px solid white;
+	width: 200px;
 
 }
 
 
 
 footer {
+	position: absolute;
+	top: 700px;
 	font-size: 8pt;
-	font-weight: 300;
+
+	padding-bottom: 40px;
 
 	text-align: center;
 
 	margin: auto;
   	left: 0; right: 0;
 
-  	margin-top: -30px;
 }
 footer a {
 	text-decoration: none;
@@ -153,14 +162,17 @@ footer a {
 .fogs {
 	position: absolute;
 	z-index: -999;
+	left: -65px;
+	top: -10px;
 }
 .fogs p {
 	color: rgba(0,0,0,0);
 }
 
 
-body {
-	background: #000;
+/*borrowed from http://media.24ways.org/2009/15/assets/css/space.css*/
+
+/*body {
 	-webkit-animation-name: pulse;
 	-webkit-animation-duration: 30s;
 	-webkit-animation-iteration-count: infinite;
@@ -169,21 +181,22 @@ body {
 
 @-webkit-keyframes pulse {
 	from {
-		background: #000;
+		background-color: #434c50;
 	}
 	25% {
-		background-color: #003;
+		background-color: #000;
 	}
 	50% {
-		background-color: #030;
+		background-color: #003;
 	}
 	to {
-		background: #000;
+		background-color: #434c50;
 	}
-}
+}*/
 
 
-#fog,
+
+/*#fog,
 #fog-2 {
 	position: absolute;
 	top: 50%;
@@ -214,7 +227,7 @@ body {
 		-webkit-transform: rotate(360deg);
 		background-position: 1000px center;
 	}
-}
+}*/
 
 #glow {
 	position: absolute;
